@@ -74,10 +74,6 @@ class BinarySearchTree {
 	}
 
 	remove(data) {
-		// if (!this.has(data)) return;
-		// const indexInsert = this.data.findIndex((a) => a > data);
-		// this.data.splice(indexInsert, 1);
-
 		this.data = removeNode(this.data, data);
 		function removeNode(node, data) {
 			if (node === null) return null;
